@@ -4,6 +4,11 @@ $(document).ready(function() {
   $("#scrapeButton").on("click", event => {
     //loads articles
     event.preventDefault();
+    $('#article-container').append(
+        `<div class="progress">
+            <div class="indeterminate"></div>
+        </div>`
+    );
 
     $.ajax({
       url: "/api/load-articles",
@@ -76,10 +81,10 @@ $(document).ready(function() {
       const appendLoop = () => {
         let i = 0;
         let counter;
-        const row = $("<div class='row' id='article-row'>");
         const articleContainer = $("#article-container");
         while (i < divArray.length) {
-          counter = 0;
+            const row = $("<div class='row' id='article-row'>");
+            counter = 0;
           articleContainer.append(row);
           while (counter < 4) {
             //only populates four per row
@@ -88,6 +93,7 @@ $(document).ready(function() {
             row.append(divArray[i]);
           }
         }
+        $(".progress").remove();
       };
 
       appendLoop();
