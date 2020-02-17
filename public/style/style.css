@@ -1,0 +1,54 @@
+#welcome-banner {
+    background-image: url(./img/geometry.png);
+    background-repeat: repeat;
+    margin-top: 2px;
+    height: 271px;
+    border-bottom: 5px solid #ffea00;
+}
+
+#articlecont{
+    padding-top: 2%;
+}
+
+.banner-text{
+    padding: 3%;
+    color: #4db6ac;
+}
+
+.banner-header{
+    margin: auto;
+}
+
+
+.fave-icon {
+    background-color:#ee6e73 !important;
+}
+
+.scrapebuttn{
+    margin-left: 50%;
+
+}
+
+.article--img{
+    position: relative;
+}
+
+#add-note{
+    color: #ffea00;
+}
+
+#fave-bttn{
+    color: #ee6e73;
+}
+#close-bttn{
+    color: #4db6ac;
+}
+/* #article-row{
+	display: flexbox;
+	flex-direction: row;
+	flex-wrap: wrap; 
+}
+#article-col{
+    align-items: flex-start;
+    align-self: flex-start;
+} */
